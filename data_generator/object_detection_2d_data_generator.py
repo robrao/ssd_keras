@@ -677,7 +677,7 @@ class DataGenerator:
         such as JPG or PNG.
 
         It is recommended that you always convert the dataset into an HDF5 dataset if you
-        have enugh hard drive space since loading from an HDF5 dataset accelerates the data
+        have enough hard drive space since loading from an HDF5 dataset accelerates the data
         generation noticeably.
 
         Note that you must load a dataset (e.g. via one of the parser methods) before creating
@@ -705,6 +705,8 @@ class DataGenerator:
         self.hdf5_dataset_path = file_path
 
         dataset_size = len(self.filenames)
+
+        print('Creating HDF5: %s' % file_path)
 
         # Create the HDF5 file.
         hdf5_dataset = h5py.File(file_path, 'w')

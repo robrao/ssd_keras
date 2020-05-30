@@ -165,7 +165,7 @@ class SSDInputEncoder:
                 raise ValueError("All aspect ratios must be greater than zero.")
 
         if len(variances) != 4:
-            raise ValueError("4 variance values must be pased, but {} values were received.".format(len(variances)))
+            raise ValueError("4 variance values must be passed, but {} values were received.".format(len(variances)))
         variances = np.array(variances)
         if np.any(variances <= 0):
             raise ValueError("All variances must be >0, but the variances given are {}".format(variances))
@@ -562,7 +562,7 @@ class SSDInputEncoder:
 
         Arguments:
             batch_size (int): The batch size.
-            diagnostics (bool, optional): See the documnentation for `generate_anchor_boxes()`. The diagnostic output
+            diagnostics (bool, optional): See the documentation for `generate_anchor_boxes()`. The diagnostic output
                 here is similar, just for all predictor conv layers.
 
         Returns:
