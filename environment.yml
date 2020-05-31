@@ -1,6 +1,5 @@
 name: prolixor
 channels:
-  - simpleitk
   - conda-forge
   - defaults
 dependencies:
@@ -25,6 +24,7 @@ dependencies:
     - absl-py==0.8.0
     - astor==0.8.0
     - astroid==2.3.0
+    - astunparse==1.6.3
     - attrs==19.3.0
     - backcall==0.1.0
     - beautifulsoup4==4.9.0
@@ -38,11 +38,11 @@ dependencies:
     - defusedxml==0.6.0
     - editdistance==0.5.3
     - entrypoints==0.3
-    - gast==0.3.2
+    - gast==0.3.3
     - gobject==0.1.0
     - google-auth==1.10.0
     - google-auth-oauthlib==0.4.1
-    - google-pasta==0.1.7
+    - google-pasta==0.2.0
     - grpcio==1.26.0
     - h5py==2.10.0
     - idna==2.8
@@ -112,18 +112,20 @@ dependencies:
     - requests-oauthlib==1.3.0
     - requests-toolbelt==0.9.1
     - rsa==4.0
-    - ruamel.yaml==0.16.7
-    - ruamel.yaml.clib==0.2.0
+    - ruamel-yaml==0.16.7
+    - ruamel-yaml-clib==0.2.0
     - scikit-image==0.16.2
     - scikit-learn==0.22.2.post1
-    - scipy==1.3.2
+    - scipy==1.4.1
     - send2trash==1.5.0
     - six==1.12.0
     - sklearn==0.0
     - soupsieve==2.0
-    - tensorboard==2.1.0
-    - tensorflow-estimator==1.15.1
-    - tensorflow-gpu==2.0.0rc1
+    - tb-nightly==1.15.0a20190806
+    - tensorboard==2.2.2
+    - tensorboard-plugin-wit==1.6.0.post3
+    - tensorflow-estimator==2.2.0
+    - tensorflow-gpu==2.2.0
     - termcolor==1.1.0
     - terminado==0.8.3
     - testpath==0.4.4
@@ -135,12 +137,12 @@ dependencies:
     - urllib3==1.25.8
     - urwid==2.1.0
     - vext==0.7.3
-    - vext.gi==0.7.0
+    - vext-gi==0.7.0
     - wcwidth==0.1.7
     - webencodings==0.5.1
     - werkzeug==0.15.6
     - widgetsnbextension==3.5.1
     - wrapt==1.11.2
     - zipp==3.1.0
-prefix: /home/rrao/miniconda3/envs/prolixor
+prefix: /home/ubuntu/anaconda3/envs/prolixor
 
